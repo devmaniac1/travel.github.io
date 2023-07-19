@@ -132,5 +132,17 @@
         <h5><span>&copy;</span> No Copying 2023</h5>
     </footer>
 </body>
+    <script>
+        window.addEventListener('scroll', function() {
+            var navbar = document.querySelector('.navbar');
+            var scrolled = window.scrollY > 0;
+
+            if (scrolled) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
 </html>
 
